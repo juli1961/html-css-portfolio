@@ -3,102 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Юлія — Портфоліо</title>
+    <title>Юлія Прокопюк — Портфоліо</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-    <header>
-        <div class="logo">Юлія</div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Головна</a></li>
-                <li><a href="#about">Про мене</a></li>
-                <li><a href="#skills">Навички</a></li>
-                <li><a href="#projects">Проєкти</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
- 
-    <main>
-        <section id="hero">
-            <img src="images/name.jpg" alt="Фото Юлії" width="300" height="100">
-            <h1>Привіт, я Юлія</h1>
-            <p>Студентка кафедри кореляційної оптики. Вчуся на інженера та вчуся створювати цікаві ідеї для бізнесу.</p>
-        </section>
 
-        <section id="about">
-            <h2>Про мене</h2>
+<header>
+    <div class="logo">Юлія Прокопюк</div>
+    <nav>
+        <ul>
+            <li><a href="#hero" class="nav-link">Головна</a></li>
+            <li><a href="#about" class="nav-link">Про мене</a></li>
+            <li><a href="#skills" class="nav-link">Навички</a></li>
+            <li><a href="#projects" class="nav-link">Проєкти</a></li>
+            <li><a href="#contact" class="nav-link">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="hero">
+    <img src="images/name.jpg" alt="Фото Юлії" width="300" height="100">
+    <h1>Привіт, я Юлія Прокопюк</h1>
+    <p>Студентка факультету кореляційної оптики, спеціальність — <em>Метрологія, інформаційно-вимірювальна техніка</em>. 2-й курс, бакалаврат.</p>
+    <a href="#projects" class="btn">Переглянути мої роботи</a>
+</section>
+
+<h2>Про мене</h2>
+<div class="about-content">
+    <div class="about-content">
+        <p>Я — <strong>Юлія Прокопюк</strong>, студентка факультету <em>кореляційної оптики</em> за спеціальністю <em>Метрологія, інформаційно-вимірювальна техніка</em>. Захоплююся сучасними технологіями та графічним дизайном, і прагну поєднати точні науки з творчістю.</p>
+        <p>Зараз я намагаюсь вивчати основи <strong>HTML</strong> та <strong>CSS</strong>, а також знайомлюся з системою контролю версій <em>Git</em>. Мій шлях у веб-розробці тільки починається, але я вже бачу, як ці знання доповнюють мою інженерну освіту.</p>
+        <p>Закінчую 2 курс. <em>Моя мета — стати професіоналом, який вміє не лише вимірювати й аналізувати, а й презентувати результати своєї роботи сучасними цифровими засобами</em>.
+        <div class="about-photo">
             <img src="images/фото_профілю.jpg" alt="Фото профілю" width="300" height="400">
-            <p>Я захоплююся сучасними технологіями та графічним дизайном. Моя мета — стати професіоналом у своїй сфері.</p>
-            <p>Зараз я вивчаю основи HTML та CSS, а також знайомлюся з системою контролю версій Git. У вільний час я люблю створювати цікаві речі.</p>
-        </section>
+        </div>
+    </div>
 
-        <section id="skills">
-            <h2>Навички</h2>
+    <section id="skills">
+        <h2>Навички</h2>
+        <div class="skills-list">
             <ul>
-                <li>HTML — основи верстки</li>
-                <li>CSS — стилізація сторінок</li>
-                <li>Git — контроль версій</li>
-                <li>VS Code — редактор коду</li>
-                <li>Chrome DevTools — інструменти розробника</li>
+                <li class="skill-item">HTML — стараюсь вивчати</li>
+                <li class="skill-item">Figma - знаю базу для створення дизайнів</li>
+                <li class="skill-item">Python - базовий рівень знань та навичок</li>
+                <li class="skill-item">Canva - створення презентацій</li>
+                <li class="skill-item">PowerPoint - створення унікальних анімацій для презентацій </li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>Мої проєкти</h2>
-         
-            <article class="card">
-                <img src="images/проект_1.png" alt="Опис першого проєкту" width="300" height="200">
-                <h3>Логотип компанії</h3>
-                <p> Це мій перший досвід створення голотипу для моєї онлайн лабораторії.</p>
-                <a href="#">Переглянути</a>
-            </article>
-         
-            <article class="card">
-                <img src="images/проект_2.png" alt="Опис другого проєкту" width="500" height="200">
-                <h3>Рекламний банер 1</h3>
-                <p>Тут зображено реклама моєї онлайн-лабораторії.</p>
-                <a href="#">Переглянути</a>
-            </article>
-         
-            <article class="card">
-                <img src="images/проект_3.png" alt="Опис третього проєкту" width="600" height="250">
-                <h3>Рекламний банер 2</h3>
-                <p>Робота з рекламою для міста та піар компанії.</p>
-                <a href="#">Переглянути</a>
-            </article>
-         
-        </section>
+    <section id="projects">
+        <h2>Мої проєкти</h2>
+        <div class="projects-grid">
 
-        <section id="contact">
-            <h2>Зв'язатися зі мною</h2>
-            <form>
-                <div>
-                    <label for="name">Ваше ім'я</label>
-                    <input type="text" id="name" name="name" required
-                           placeholder="Іван Іваненко">
+            <article class="card">
+                <img src="images/проект_1.png" alt="Логотип компанії" width="300" height="200">
+                <div class="card-body">
+                    <h3>Логотип компанії</h3>
+                    <p>Це мій перший досвід створення логотипу для власної онлайн-лабораторії. Я розробила концепцію, обрала кольорову гаму та шрифт, що відображають точність і сучасність.</p>
+                    <a href="#" class="btn" target="_blank">Переглянути</a>
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required
-                           placeholder="ivan@example.com">
+            </article>
+
+            <article class="card">
+                <img src="images/проект_2.png" alt="Рекламний банер 1" width="400" height="200">
+                <div class="card-body">
+                    <h3>Рекламний банер 1</h3>
+                    <p>Рекламний банер для моєї онлайн-лабораторії. Завдання — привернути увагу потенційних клієнтів і коротко пояснити суть послуг. Використовувала Adobe Express та Canva.</p>
+                    <a href="#" class="btn" target="_blank">Переглянути</a>
                 </div>
-                <div>
-                    <label for="message">Повідомлення</label>
-                    <textarea id="message" name="message" rows="5"
-                              placeholder="Ваше повідомлення..."></textarea>
+            </article>
+
+            <article class="card">
+                <img src="images/проект_3.png" alt="Рекламний банер 2" width="500" height="200">
+                <div class="card-body">
+                    <h3>Рекламний банер 2</h3>
+                    <p>Робота з рекламою для міста та піар-кампанії. Банер орієнтований на широку аудиторію — акцент на візуальній простоті та чіткому повідомленні бренду.</p>
+                    <a href="#" class="btn" target="_blank">Переглянути</a>
                 </div>
-                <button type="submit">Надіслати</button>
-            </form>
-        </section>
-    </main>
- 
+            </article>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Зв'язатися зі мною</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" required
+                       placeholder="Іван Іваненко">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required
+                       placeholder="ivan@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Ваше повідомлення..."></textarea>
+            </div>
+            <button type="submit" class="btn">Надіслати</button>
+        </form>
+    </section>
+
+
     <footer>
-        <p>&copy; 2025 Юлія. Всі права захищені.</p>
-        <a href="https://github.com/yulya" target="_blank">GitHub</a>
-    </footer>
- 
+    <p>&copy; 2025 Юлія Прокопюк. Всі права захищені.</p>
+    <a href="https://github.com/yulya" target="_blank">GitHub</a>
+</footer>
+
+</div>
 </body>
 </html>
