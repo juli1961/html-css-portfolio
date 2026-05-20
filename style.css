@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 :root {
-    --color-primary:   #2E5C9E;
+    --color-primary: #e88bd5;
     --color-bg:        #FFFFFF;
     --color-bg-alt:    #F4F6FF;
-    --color-text:      #1B1B2F;
-    --color-muted:     #6B7280;
+    --color-text: #c400ff;
+    --color-muted: #e88bd5;
     --font-main:       'Nunito', sans-serif;
     --radius:          10px;
     --shadow:          0 4px 20px rgba(0,0,0,0.08);
@@ -194,7 +194,7 @@ input, textarea {
 
 input:focus, textarea:focus {
     border-color: var(--color-primary);
-    box-shadow:   0 0 0 3px rgba(46,92,158,0.15);
+    box-shadow:   0 0 0 3px rgb(181 2 255 / 0.15);
 }
 
 button.btn {
@@ -206,3 +206,29 @@ button.btn {
 }
 button.btn:hover  { opacity: 0.88; transform: translateY(-2px); }
 button.btn:active { transform: translateY(0); }
+
+.btn      { transition: all 0.2s ease; }
+.nav-link { transition: color 0.2s; }
+.card     { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+
+.card:hover {
+    transform:  translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+#hero img  { animation: fadeInUp 0.6s ease forwards; }
+#hero h1   { animation: fadeInUp 0.7s ease 0.1s forwards; opacity: 0; }
+#hero p    { animation: fadeInUp 0.7s ease 0.2s forwards; opacity: 0; }
+#hero .btn { animation: fadeInUp 0.7s ease 0.3s forwards; opacity: 0; }
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgb(181 2 255 / 0.15); }
+    50%       { box-shadow: 0 0 0 10px rgba(46,92,158,0); }
+}
+
+#hero img { animation: pulse 2.5s ease-in-out infinite; }
